@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Recenzii</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Salon.html"><img src="imagini-proiect/logosalon.webp" alt="logo">A&M Barbershop</a>
+        </div>
+        <nav>
+            <ul class="nav-links" id="menuList">
+                <li><a href="Salon.html">Salon</a></li>
+                <li><a href="Servicii.html">Servicii</a></li>
+                <li><a href="Personal.html">Personal</a></li>
+                <li><a href="Recenzii.html" class="active">Recenzii</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container1-recenzii">
+
+            <div class="review-card review-andrei">
+                <img src="imagini-proiect/recenzii1.jpg" alt="">
+                <h3>Andrei M.</h3>
+                <p>"Servicii excelente și o echipă foarte profesionistă! Tunsoarea mea a ieșit exact cum mi-am dorit, iar atmosfera din salon este relaxantă și primitoare. Recomand cu încredere pentru oricine vrea un look de calitate!"</p>
+            </div>
+    
+            <div class="review-card review-victor">
+                <img src="imagini-proiect/recenzii2.jpg" alt="">
+                <h3>Victor P.</h3>
+                <p>"Cel mai bun barbershop din oraș! Am fost pentru o tunsoare și conturare a bărbii, iar atenția la detalii a fost impresionantă. Echipa e talentată și prietenoasă, iar serviciile sunt de top. Cu siguranță mă voi întoarce!"</p>
+            </div>
+    
+            <div class="review-card review-sorin">
+                <img src="imagini-proiect/recenzii3.jpg.avif" alt="">
+                <h3>Sorin D.</h3>
+                <p>"Am ales acest loc pentru o schimbare de look și a fost o experiență grozavă. Frizerii sunt profesioniști și au înțeles exact ce vreau. Tunsul și vopsirea au ieșit impecabil. Un barbershop unde te simți cu adevărat respectat și răsfățat!"</p>
+            </div>
+
+            </div>
+
+            <div class="container2-recenzii">
+
+            <div class="owner-card">
+                <img src="imagini-proiect/Alin.jpeg" alt="Alin">
+                <h3>ALIN</h3>
+                <h4>Proprietar A&M Barbershop</h4>
+                <p>Părerile clienților noștri au fost mereu o sursă de inspirație și motivație. Prin sugestiile și feedbackul lor, am reușit să îmbunătățim constant serviciile, adaptându-ne nevoilor și așteptărilor lor. Ne dorim ca fiecare vizită să fie o experiență care îmbină profesionalismul, atenția la detalii și confortul.</p>
+            </div>
+    
+            <div class="review-form">
+                <h3>Formular recenzii</h3>
+                <h4>Parerea ta conteaza!</h4>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="ecab1e12-4648-4ea0-8211-02c5247b29da">                   
+                    <label for="name">Nume</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="serviciu">Serviciul ales</label>
+                    <select name="serviciu" id="">
+                        <option value="Tuns-Aranjat">Tuns & Aranjat</option>
+                        <option value="Tuns-Tratament">Tuns & Tratament</option>
+                        <option value="Ingrijire-par">Ingrijire Par</option>
+                        <option value="Barba">Barba</option>
+                    </select>
+    
+                    <label for="frizer">Frizerul</label>
+                    <select name="frizer" id="frizer">
+                        <option value="Alin">Alin</option>
+                        <option value="Michel">Michel</option>
+                    </select>
+    
+                    <label for="message">Mesaj</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit">TRIMITE</button>
+                </form>
+            </div>
+    
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="Salon.html">Salon</a></li>
+                    <li><a href="Servicii.html">Servicii</a></li>
+                    <li><a href="Personal.html">Personal</a></li>
+                    <li><a href="Recenzii.html">Recenzii</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright &copy 2024</p>
+            </div>
+            </div>
+    </footer>
+</body>
+</html>

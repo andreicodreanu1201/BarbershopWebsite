@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Salon.html"><img src="imagini-proiect/logosalon.webp" alt="logo">A&M Barbershop</a>
+        </div>
+        <nav>
+            <ul class="nav-links" id="menuList">
+                <li><a href="Salon.html">Salon</a></li>
+                <li><a href="Servicii.html">Servicii</a></li>
+                <li><a href="Personal.html">Personal</a></li>
+                <li><a href="Recenzii.html">Recenzii</a></li>
+                <li><a href="Contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-contact">
+            <div class="container-contact-info">
+                <div class="contact-card1"> 
+                    <h2>Contact</h2>
+                    <div class="contact-line">
+                    <img src="imagini-proiect/telephone.png" alt="Phone">
+                    <p>0744000444</p>
+                    </div>
+
+                    <div class="contact-line">
+                    <img src="imagini-proiect/email.png" alt="Email">
+                    <p>ambarbershop@gmail.com</p>
+                    </div>
+
+                    <div class="contact-line"> 
+                    <img src="imagini-proiect/pin.png" alt="location">
+                    <p>Strada Tudor Vladimirescu 10, Negrești-Oaș 445200</p>
+                    </div>
+                </div>
+
+                <div class="contact-card2">
+                    <h2>Programul nostru</h2>
+                    <img src="imagini-proiect/calendar.png" alt="Calendar">
+                    <p>Luni-Vineri : 8:00 - 19:00</p>
+                    <p>Sambata: 09:00 - 16:00</p>
+                    <p>Duminica: Inchis</p>
+                </div>
+
+                <iframe class="harta" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d483.4404509499495!2d23.42740076533252!3d47.8670178320219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1735921890129!5m2!1sro!2sro" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contact-form">
+                <h3>Formular contact</h3>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="ecab1e12-4648-4ea0-8211-02c5247b29da">
+                    <label for="name">Nume</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="telefon">Telefon</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{4}[0-9]{3}[0-9]{3}">
+    
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+    
+                    <label for="message">Mesaj</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit">TRIMITE</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="Salon.html">Salon</a></li>
+                    <li><a href="Servicii.html">Servicii</a></li>
+                    <li><a href="Personal.html">Personal</a></li>
+                    <li><a href="Recenzii.html">Recenzii</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright &copy 2024</p>
+            </div>
+            </div>
+    </footer>
+</body>
+</html>
